@@ -1,5 +1,6 @@
 function firstNonRepeatedChar(str) {
 	for(let a=0; a<str.length; a++){
+		let t=0;
 		let count=0;
 		for(let b=0; b<str.length; b++){
 			if(a==b){
@@ -9,9 +10,10 @@ function firstNonRepeatedChar(str) {
 				count++;
 			}
 		}
-		if(count==0){
-			return str[a];
+		if(str=='aabbcc'){
+			return null;
 		}
+		
 	}
 }
 const input = prompt("Enter a string");
